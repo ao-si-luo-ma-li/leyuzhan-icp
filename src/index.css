@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* reset */
+html{font-size:15px;}
+html,body{margin:0;}
+body{width:100%;font-size:1rem;font-family:"Roboto","Microsoft JhengHei UI","Microsoft JhengHei",sans-serif;overflow-x:hidden; /* -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -ms-overflow-style: scrollbar; */}
+a{text-decoration:none;outline:none;}
+a:visited,a:hover,a:focus,a:active{text-decoration:none;}
+*:focus,*:active{outline:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;line-height:2;}
+label{font-weight:inherit;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline:0;}
+textarea{resize:vertical;}
+ol.reset,ul.reset{margin:0;padding:0;list-style:none;}
+input,button,textarea,select{*font-size:100%;}
+code,kbd,samp,tt{font-size:100%;}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*:after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+input[type=date]::-webkit-inner-spin-button{visibility:hidden;}
+
