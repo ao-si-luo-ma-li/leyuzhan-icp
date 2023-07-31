@@ -86,7 +86,7 @@ const Home = () => {
         <div className='service-illustration_list'>
           {
             ServiceIllustration.map(item => (
-            <div className='service-illustration_list-item' key={item.title}>
+            <Link to="/login" className='service-illustration_list-item' key={item.title}>
               <div className="box-before">
                 <img src={item.img} alt="" />
                 <h3>{item.title}</h3>
@@ -94,7 +94,7 @@ const Home = () => {
               <div className="box-after type_of_illust">
                 {item.pText()}
               </div>
-            </div>
+            </Link>
             ))
           }
         </div>
@@ -116,7 +116,7 @@ const Home = () => {
 
       <div className='portfolio-link'>
         <div className='portfolio-img'>
-          <Link to="/album-list">
+          <Link to="/login">
             <picture>
               <source media="(max-width: 640px)" srcSet={pfLink}/>
               <img src={pfLink} alt="点击这里，查看更多插画选辑!!" />

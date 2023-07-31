@@ -2,6 +2,9 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 
 const Header = () => {
+  const handleScroll = () => {
+    window.scrollTo(0 , document.querySelector('.home-page_banner').clientHeight + 200)
+  }
   return (
     <div>
       <div className='header-placeholder'></div>
@@ -12,7 +15,7 @@ const Header = () => {
         <div className="header-right">
           <div className='header-menus'>
             <NavLink to="/index" className='header-menus_item'>首页</NavLink>
-            <NavLink to="/album-list" className='header-menus_item'>美术设计</NavLink>
+            <span onClick={handleScroll} className='header-menus_item'>美术设计</span>
             <NavLink to="/about-us" className='header-menus_item'>关于我们</NavLink>
             <NavLink to="/login" className='header-menus_item'>注册登录</NavLink>
           </div>
