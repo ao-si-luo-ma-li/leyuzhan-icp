@@ -1,8 +1,16 @@
-import { Link, NavLink } from 'react-router-dom'
-import './index.scss'
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import './index.scss';
 
 const Header = () => {
+  const navigate = useNavigate();
   const handleScroll = () => {
+    if (!window.location.href.includes('index')) {
+      navigate('/index');
+
+      setTimeout(() => {
+        window.scrollTo(0 , document.querySelector('.home-page_banner').clientHeight + 200)
+      }, 500)
+    }
     window.scrollTo(0 , document.querySelector('.home-page_banner').clientHeight + 200)
   }
   return (
